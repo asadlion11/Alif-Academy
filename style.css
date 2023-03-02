@@ -1,0 +1,231 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+.container{
+    width: 90vw;
+    margin: auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo{
+    margin-left: 20px;
+}
+.logo h1{
+    font-size: 40px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    list-style: none;
+    margin-top: 10px;
+    font-size: 25px;
+    margin: 15px;
+    margin-right: 50px;
+}
+a{
+    text-decoration: none;
+    color: purple;
+   
+}
+.higlight{
+   border-bottom: 5px solid violet;
+}
+label{
+    position: absolute;
+    width: 40px;
+    height: 22px;
+    border-radius: 20px;
+    border: 2px solid;
+    right: 10px;
+    top: 30px;
+}
+label::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    left: 1px;
+    top: 1px;
+}
+label.active::before{
+    left: 24px;
+    background-color: #fff;
+}
+body.dark{
+    background-color: #000;
+    color: #fff;
+}
+.showcase{
+    background-color: violet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    line-height: 1.8;
+}
+.showcase p {
+    font-size: 25px;
+}
+.showcase span{
+    background-color: black;
+    color: violet;
+}
+.btn{
+   
+    width: 120px;
+    height: 50px;
+    margin-top: 16px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: 700;
+    box-shadow:  0px 2px black;
+    transition: 0.5s;
+    background-color: violet;
+    color: black;
+    border:3px sold violet;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color:black;
+    color: violet;  
+}
+.about{
+    margin: 20px;
+}
+.title{
+    font-size: 50px;
+    margin: 40px auto;
+    text-align: center;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+.col-2{
+    flex-basis: 45%;
+    margin: 10px;
+}
+
+img{
+    width: 100%;
+}
+.title-2{
+   text-align: center;
+   margin-bottom: 10px;
+   font-size: 30px;
+}
+p{
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px;
+}
+.col-3{
+    flex-basis: 30%;
+    background-color:lightcoral;
+    margin: 10px;
+    padding: 10px;
+    color: #000;
+    text-align: center;
+    border-radius: 10px;
+    border-top: 20px solid violet;
+    transition: all 0.5s ease-in;
+}
+.col-3:hover{
+    cursor: pointer;
+    transform: scale(0.98);
+    opacity: 7;
+}
+form{
+  background-color:violet;
+  padding: 20px;
+}
+.input-control{
+    margin: 10px;
+    width: 100%;
+    align-items: center;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: inherit;
+}
+.btn-2{
+    height: 50px;
+    margin-top: 16px;
+    text-align: center;
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: 700;
+    box-shadow:  0px 2px black;
+    transition: 0.5s;
+    background-color: violet;
+    color: black;
+    border:3px sold violet;
+    width: 100%;
+}
+.btn-2:hover{
+    cursor: pointer;
+    background-color:black;
+    color: violet;  
+}
+footer{
+    height: 210px;
+    background-color: violet;
+    margin-top: 30px;
+}
+.sub-footer{
+    background-color: black;
+    color: #fff;
+    height: 80px;
+}
+.sub-footer p{
+    text-align: center;
+    padding: 10px;
+}
+@media (max-width:760px){
+    body{
+        width: 100;
+       }
+   .logo{
+    display: none;
+   }
+   nav{
+    min-width: 90vw;
+    height: 40px;
+   } 
+   nav ul li{
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+   }  
+   .row{
+    display: flex;
+    flex-direction: column;
+   }
+
+}
+
+
